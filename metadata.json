@@ -1,0 +1,6 @@
+{
+  "name": "Herly Lizarazo Photography",
+  "description": "Sitio web elegante e interactivo para Studio, un estudio de fotografía y cinematografía de bodas de alta gama.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Custom Color Palette matching the Editorial Wedding theme */
+  --color-gold-light: #f5f1ea;
+  --color-gold-medium: #e5d8ca;
+  --color-gold-accent: #c5a880;
+  --color-gold-dark: #735c00;
+  --color-warm-bg: #fff8f4;
+  --color-warm-low: #fff1e4;
+  --color-warm-card: #faecdd;
+  --color-warm-high: #f4e6d8;
+  --color-warm-highest: #eee0d2;
+  --color-charcoal: #211a12;
+  --color-muted-gray: #444748;
+  --color-accent-yellow: #fed65b;
+}
+
+/* Base style overrides */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--color-warm-bg);
+    color: var(--color-charcoal);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Components and Luxury Utilities */
+@layer utilities {
+  .font-display {
+    font-family: var(--font-serif);
+  }
+
+  /* Ghost Button */
+  .ghost-btn {
+    display: inline-block;
+    border: 1px solid var(--color-charcoal);
+    background-color: transparent;
+    color: var(--color-charcoal);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .ghost-btn:hover {
+    background-color: var(--color-charcoal);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .ghost-btn-white {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .ghost-btn-white:hover {
+    background-color: #ffffff;
+    color: var(--color-charcoal);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+  }
+
+  /* Gold Underline Link effect */
+  .gold-rule {
+    position: relative;
+  }
+  .gold-rule::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--color-gold-accent);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+  }
+  .gold-rule:hover::after {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+
+  /* Custom Scrollbar for Luxury feeling */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-warm-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-gold-accent);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-charcoal);
+  }
+}
+
+/* Simple fade-in animations on scroll helper */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
