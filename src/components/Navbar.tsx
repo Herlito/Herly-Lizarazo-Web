@@ -42,7 +42,7 @@ export default function Navbar({ onOpenInquiry }: NavbarProps) {
           href="#"
           className="text-2xl md:text-3xl font-serif tracking-widest text-[#211a12] hover:opacity-80 transition-opacity"
         >
-          STUDIO
+          HERLY
         </a>
 
         {/* Desktop Menu */}
@@ -172,7 +172,7 @@ export default function Navbar({ onOpenInquiry }: NavbarProps) {
             Consultar Disponibilidad
           </button>
           <p className="text-[10px] text-center text-[#444748]/60 uppercase tracking-widest mt-6">
-            © 2026 Studio Wedding Photography
+            © 2026 Herly Lizarazo Photography
           </p>
         </div>
       </div>

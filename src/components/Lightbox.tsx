@@ -52,7 +52,7 @@ export default function Lightbox({
       {/* Top Header Controls */}
       <div className="flex justify-between items-center w-full max-w-7xl mx-auto z-10">
         <div className="flex flex-col">
-          <span className="font-serif text-lg tracking-widest text-[#c5a880] uppercase">STUDIO</span>
+          <span className="font-serif text-lg tracking-widest text-[#c5a880] uppercase">HERLY</span>
           <span className="text-[10px] uppercase tracking-wider text-gray-400 font-sans">
             Muestra Seleccionada • {currentIndex + 1} de {items.length}
           </span>

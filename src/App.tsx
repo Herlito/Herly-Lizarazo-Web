@@ -623,7 +623,7 @@ export default function App() {
           {/* Logo brand */}
           <div className="text-center md:text-left space-y-1.5">
             <h2 className="text-2xl font-serif tracking-widest text-[#211a12]">
-              STUDIO
+              HERLY
             </h2>
             <p className="text-[10px] text-[#444748] uppercase tracking-widest font-sans">
               Fotografía y cinematografía de bodas de lujo.
@@ -666,7 +666,7 @@ export default function App() {
 
           {/* Copyright line */}
           <div className="text-center md:text-right text-[11px] text-[#444748]/70 font-sans">
-            © 2026 Studio Wedding Photography. <br />Todos los derechos reservados.
+            © 2026 Herly Lizarazo Photography. <br />Todos los derechos reservados.
           </div>
 
         </div>
